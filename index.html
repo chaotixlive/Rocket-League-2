@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="2;url=https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+  <meta http-equiv="refresh" content="5;url=https://www.youtube.com/watch?v=dQw4w9WgXcQ">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rocket League 2 News</title>
   <style>
@@ -35,13 +35,26 @@
     }
 
     .spinner {
+      position: relative;
+      width: 100px;
+      height: 100px;
       border: 8px solid #222;
       border-top: 8px solid #00adee;
       border-radius: 50%;
-      width: 80px;
-      height: 80px;
       animation: spin 1.2s linear infinite;
       margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .spinner img {
+      width: 40px;
+      height: 40px;
+      object-fit: contain;
+      border-radius: 6px;
+      pointer-events: none;
     }
 
     @keyframes spin {
@@ -64,8 +77,12 @@
 </head>
 <body>
   <div class="overlay"></div>
-  <div class="spinner"></div>
-  <h1>Rocket League 2 News, now loading...</h1>
-  <div class="status">Fetching latest update from servers</div>
+
+  <div class="spinner">
+    <img src="https://github.com/chaotixlive/Rocket-League-2/blob/main/RL2SmallLogo.png?raw=true" alt="Rocket League 2 Logo">
+  </div>
+
+  <h1>Refueling boost...</h1>
+  <div class="status">Matchmaking in progress...</div>
 </body>
 </html>
